@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rodger-Black.ttf">
+            <string>Rodger-Black</string>
+        </array>
+        <array key="Rodger-Light.ttf">
+            <string>Rodger-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="One_BPM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fdv-uh-u0n" userLabel="SecondaryView">
+                                <rect key="frame" x="0.0" y="449" width="414" height="448"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="beats per minute" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wx-Iz-SCy">
+                                        <rect key="frame" x="100" y="10" width="214" height="36"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" name="Rodger-Light" family="Rodger" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.6736489521249942" green="0.77619917399819172" blue="0.91767853499999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="3Wx-Iz-SCy" firstAttribute="top" secondItem="Fdv-uh-u0n" secondAttribute="top" constant="10" id="DCv-c9-opR"/>
+                                    <constraint firstItem="3Wx-Iz-SCy" firstAttribute="centerX" secondItem="Fdv-uh-u0n" secondAttribute="centerX" id="h1d-D6-R6G"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="one_bpm_logo" translatesAutoresizingMaskIntoConstraints="NO" id="p4O-xe-C8Y" userLabel="Logo">
+                                <rect key="frame" x="182" y="812" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="3px-5e-JUT"/>
+                                    <constraint firstAttribute="height" constant="50" id="hmL-wZ-Dnm"/>
+                                    <constraint firstAttribute="width" secondItem="p4O-xe-C8Y" secondAttribute="height" multiplier="1:1" id="qqF-Be-Nmd"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2NB-7h-x0f" userLabel="StartupView">
+                                <rect key="frame" x="35.5" y="309" width="343" height="278"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap to start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l79-Mh-Tw3">
+                                        <rect key="frame" x="32" y="57" width="278" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" name="Rodger-Black" family="Rodger" pointSize="53"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hold to reset" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kci-hT-4C9">
+                                        <rect key="frame" x="92" y="151" width="158" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" name="Rodger-Light" family="Rodger" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="F9A-XZ-mg2"/>
+                                    <constraint firstAttribute="height" constant="278" id="z9E-jD-4t7"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aiT-7l-LqR" userLabel="BPMView">
+                                <rect key="frame" x="35.5" y="309" width="343" height="278"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcZ-Pf-CYW">
+                                        <rect key="frame" x="-9.5" y="16" width="362" height="120"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="362" id="YaS-Eh-KAB"/>
+                                            <constraint firstAttribute="height" constant="120" id="vDI-kp-cHf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rodger-Black" family="Rodger" pointSize="100"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="12r-nr-ROY"/>
+                                    <constraint firstAttribute="height" constant="278" id="KSh-Zn-gpY"/>
+                                    <constraint firstItem="AcZ-Pf-CYW" firstAttribute="centerX" secondItem="aiT-7l-LqR" secondAttribute="centerX" id="Sjp-gz-TxP"/>
+                                    <constraint firstItem="AcZ-Pf-CYW" firstAttribute="top" secondItem="aiT-7l-LqR" secondAttribute="top" constant="16" id="TZe-fp-Iu0"/>
+                                    <constraint firstAttribute="width" secondItem="aiT-7l-LqR" secondAttribute="height" multiplier="343:278" id="hE3-Rs-gQG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="uDr-Mk-S13"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="278" id="z6x-JL-Wcd"/>
+                                </constraints>
+                            </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5m-Zy-gUh" userLabel="SettingsButton">
+                                <rect key="frame" x="369" y="64" width="25" height="25"/>
+                                <accessibility key="accessibilityConfiguration" label="Settings"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="8Ph-cN-YKD"/>
+                                    <constraint firstAttribute="height" constant="25" id="DPQ-na-1dR"/>
+                                </constraints>
+                                <state key="normal" image="settings_icon"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.44705882349999998" green="0.63137254899999995" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="B5m-Zy-gUh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="Lch-xV-JOI"/>
+                            <constraint firstItem="p4O-xe-C8Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mbk-8X-sJU"/>
+                            <constraint firstItem="2NB-7h-x0f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N3B-vh-Xrf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="p4O-xe-C8Y" secondAttribute="bottom" id="W5H-cf-4cb"/>
+                            <constraint firstItem="2NB-7h-x0f" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YSO-HC-ZP1"/>
+                            <constraint firstItem="Fdv-uh-u0n" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="agv-0N-y5h"/>
+                            <constraint firstItem="Fdv-uh-u0n" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="ar3-hM-5yk"/>
+                            <constraint firstItem="Fdv-uh-u0n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ge6-JN-W8E"/>
+                            <constraint firstItem="aiT-7l-LqR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lm8-5e-5DR"/>
+                            <constraint firstItem="Fdv-uh-u0n" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" constant="1" id="shM-7c-Cyh"/>
+                            <constraint firstItem="aiT-7l-LqR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vbG-xF-hzC"/>
+                            <constraint firstItem="B5m-Zy-gUh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ywK-QP-s1o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="kNc-ir-ZLr" appends="YES" id="Gkd-yW-lhJ"/>
+                            <outletCollection property="gestureRecognizers" destination="NsM-YA-MTP" appends="YES" id="hYD-es-In2"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="5GL-1K-GDr"/>
+                    <connections>
+                        <outlet property="BPMLabel" destination="AcZ-Pf-CYW" id="KPT-GA-koN"/>
+                        <outlet property="BPMView" destination="aiT-7l-LqR" id="jVx-JE-ei1"/>
+                        <outlet property="LongPressRecognizer" destination="kNc-ir-ZLr" id="vo8-gr-1Ah"/>
+                        <outlet property="SecondaryView" destination="Fdv-uh-u0n" id="NzB-6a-ZAJ"/>
+                        <outlet property="ShortLongPressRecognizer" destination="NsM-YA-MTP" id="4ek-yY-EoN"/>
+                        <outlet property="startupView" destination="2NB-7h-x0f" id="k4S-pD-9Pk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="kNc-ir-ZLr" userLabel="Long Gesture">
+                    <connections>
+                        <action selector="handleLongPress:" destination="BYZ-38-t0r" id="zJK-qg-6RY"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.0" id="NsM-YA-MTP" userLabel="Short Long Gesture">
+                    <connections>
+                        <action selector="handleShortLongPress:" destination="BYZ-38-t0r" id="xfq-Fa-GEj"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="127.53623188405798" y="90.401785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="one_bpm_logo" width="500" height="500"/>
+        <image name="settings_icon" width="25" height="25"/>
+    </resources>
+</document>
